@@ -8,10 +8,10 @@ else
   echo "Export path done"
 fi
 
-mount -v -t ext4 /dev/sda3 $LFS
+mount -v -t ext4 /dev/sda3 $LFS;
 echo "Drive mounted"
 
-/sbin/swapon -v /dev/sda4
+/sbin/swapon -v /dev/sda4;
 echo "Swap mounted"
 
-su - lfs
+su - lfs;
