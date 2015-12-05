@@ -1,6 +1,6 @@
 #!/bin/bash
 #Starting by ensuring $LFS is linked to /mnt/lfs/
-if [$LFS = /mnt/lfs/];
+if ! type "$LFS" > /dev/null;
 then
   echo "$LFS is declared"
 fi
