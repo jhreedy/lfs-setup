@@ -1,9 +1,9 @@
 #!/bin/bash
 #Starting by ensuring $LFS is linked to /mnt/lfs/
-if ! type "$LFS" > /dev/null;
+if [ "$LFS" = "/mnt/lfs/" ]
 then
-  echo "$LFS is declared"
-fi
+  echo "$LFS is set"
 else
-  echo "Something went wrong"
+  echo "LFS is not set"
+  export LFS=/mnt/lfs/
 fi
