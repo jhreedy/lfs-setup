@@ -14,4 +14,4 @@ echo "Drive mounted"
 /sbin/swapon -v /dev/sda4;
 echo "Swap mounted"
 
-su - lfs;
+su - lfs -c;
