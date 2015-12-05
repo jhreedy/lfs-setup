@@ -4,6 +4,6 @@ if [ "$LFS" = "/mnt/lfs/" ]
 then
   echo "$LFS is set"
 else
-  echo "LFS is not set"
-  export LFS=/mnt/lfs/
+  export LFS="/mnt/lfs"
+  echo "Export path done"
 fi
