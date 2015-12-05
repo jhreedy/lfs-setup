@@ -1,0 +1,8 @@
+#!bin/bash
+#Starting by ensuring $LFS is linked to /mnt/lfs/
+if [$LFS = /mnt/lfs/];
+  echo "$LFS is declared"
+fi
+else
+  echo "Something went wrong"
+fi
